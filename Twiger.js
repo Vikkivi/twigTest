@@ -1,12 +1,9 @@
 import Twig from 'twig';
-import bemExtension from './bemExtension';
 import { wrap } from 'jest-snapshot-serializer-raw';
 import pretty from 'pretty';
 import cleanHtml from './cleanHtml';
 
 const { twig } = Twig;
-
-Twig.extendFilter('bem', bemExtension);
 
 export class Twiger {
     constructor(twigParams) {
